@@ -95,7 +95,7 @@ for(i in 1:ceiling(num.snp/1000)){
     verbose = FALSE
   )
   slice <- slice %>% arrange(Key)
-  temp <- apply(slice,1 ,generate_geno)
+  temp <- apply(slice,1 ,generate_geno,output_simple_mode=output_simple_mode)
   all.geno <- c(all.geno, temp)
 }
 
