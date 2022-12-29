@@ -128,8 +128,8 @@ geno.matrix.hmp[1:5,]
 
 
 #Saving results ===============================
-saveRDS(geno.matrix, file = 'processed_geno_grape_4_4_4_geno.matrix.Aug.rds')
-saveRDS(all.geno, file = 'processed_geno_grape_4_4_4_all.geno.Aug.rds')
+#saveRDS(geno.matrix, file = 'processed_geno_grape_4_4_4_geno.matrix.Aug.rds')
+#saveRDS(all.geno, file = 'processed_geno_grape_4_4_4_all.geno.Aug.rds')
 write.table(geno.matrix.hmp,file = 'processed_geno_grape_4_4_4_Aug9.hmp.txt',
             quote = F,sep = '\t',row.names = F)
 
