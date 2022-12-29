@@ -102,7 +102,7 @@ for(i in 1:ceiling(num.snp/1000)){
 geno.matrix <- matrix(all.geno,ncol = num.line,byrow = T)
 dim(geno.matrix)
 
-colnames(geno.matrix) <- colnames(vcf.file@gt)[2:111]
+colnames(geno.matrix) <- colnames(vcf.file@gt)[-1]
 rownames(geno.matrix) <- vcf.file@fix[,3]
 
 geno.matrix[!geno.matrix %in% c('N','A','T','C','G','H','R','Y','S','W','K','M')] <- 'N'
